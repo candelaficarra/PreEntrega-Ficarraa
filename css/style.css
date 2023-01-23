@@ -183,15 +183,7 @@ textarea{
     object-fit: cover;
 
 }
-/* .galeria-item:nth-child(4){
-    grid-column-start: span 2;
-}
-.galeria-item:nth-child(8){
-    grid-column-start: span 2;
-} 
-.galeria-item:nth-child(7){
-    grid-column-start: span 2;
-}  */
+
 .galeria-titulo{
     position: absolute;
     bottom: 0;
