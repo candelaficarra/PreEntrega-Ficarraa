@@ -1,0 +1,24 @@
+@media(max-width:768px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px ;
+    }
+
+.galeria-container{
+    grid-template-columns: repeat(4, 1fr);
+    }
+.galeria-item:nth-child(3){
+    grid-column-start: span 2;
+    }
+form{
+    width: 100%;
+}
+.pie-pagina .grupo1{
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+}
