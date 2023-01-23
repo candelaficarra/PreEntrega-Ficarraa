@@ -268,15 +268,17 @@ section h3 {
   .pie-pagina .grupo1 .box figure img {
     display: none; }
   .seccion img {
-    width: 150px;
+    width: 100px;
     border-radius: 30px;
-    justify-content: space-between; }
+    justify-content: space-evenly;
+    align-items: center; }
   section h3 {
     margin: 0;
     color: black;
     font-size: 10px; }
   .seccion .parrafo h2 {
-    font-size: 20px; } }
+    font-size: 15px;
+    align-items: center; } }
 
 @media (max-width: 768px) {
   header {
