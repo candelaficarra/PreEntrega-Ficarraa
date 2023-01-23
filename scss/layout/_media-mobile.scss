@@ -1,95 +1,104 @@
 @media(max-width:320px){
     header{
     flex-direction: column;
+    nav{
+        padding: 5px 0px ;
+    }
 }
-nav{
-    padding: 5px 0px ;
-}
-.titulo p{
-    display: none;
-}
-.titulo h1 {
-    font-family: 'Roboto', sans-serif;
-    width: 50px;
-    height: 50px;
-}
+
 .logo h2{
     font-family: 'Karla', sans-serif;
     width: 100%;
     height: 100%;
     font-size: 15px; 
 }
-
-.galeria-titulo{
-    position: absolute;
-    bottom: 0;
-    color: rgb(0, 0, 0);
-    background: linear-gradient(rgba white  black);
-    width: 80%;
-    margin: 0;
-    padding: 2px;
-    font-size: 10px;
+.titulo h1 {
+    font-family: 'Roboto', sans-serif;
+    width: 50px;
+    height: 50px;
+    font-size: 15px;
 }
+.galeria-container{
+    .galeria-item{
+        img{
+        }
+        h4{
+            position: absolute;
+            width: 70%;
+            margin: 0;
+            padding: 2px;
+            font-size: 10px;
+        }
+    }
+}
+.seccion{
+    .parrafo{
+        h2{
+            font-size: 15px;
+            align-items: center;
+        }
+        p{
+            color: black;
+            margin-right: 10px;
+        }
+        img{
+            width: 100px;
+            height: 100px;
+            border-radius: 30px;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+    }
+}
+
 form{
     width: 100%;
 }
-.fondo img{
-    width: 100%;
-    height: 500px;
-    opacity: 0.80;
-    background-size:none;
 
-}
 .fondo{
     height: 500px;
+        img{
+            width: 100%;
+            height: 500px;
+            opacity: 0.80;
+            background-size:none;
+        }
+        h2{
+            font-size: 20px;
+            color:black;
+            position: absolute;
+            top: 40%;
+            left: 25%;
+            text-align: center;
+        }
+        p{
+            font-size: 15px;
+            color:black;
+            position: absolute;
+            top: 50%;
+            right: 20%;
+            text-align: center;
+        }
 }
-.titulo1{
-    font-size: 20px;
-    color:black;
-    position: absolute;
-    top: 40%;
-    left: 25%;
-    text-align: center;
 
-}
-.titulo2{
-    font-size: 15px;
-    color:black;
-    position: absolute;
-    top: 50%;
-    right: 20%;
-    text-align: center;
-}
 footer{
     font-size: 15px;
     margin: 0;
     justify-content: sa;
-}
-.pie-pagina .grupo1{
-    width: 90%;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 30px;
-    padding: 35px 0px;
-    justify-content:right;
-}
-.pie-pagina .grupo1 .box figure img{
-    display: none;
-}
+        .grupo1{
+            width: 90%;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 30px;
+            padding: 35px 0px;
+            justify-content:right;
+                .box{
+                    figure{
+                        img{
+                            display: none;
+                        }
+                    }
+                }
+        }
 
-.seccion img{
-    width: 100px;
-    border-radius: 30px;
-    justify-content: space-evenly;
-    align-items: center;
 }
-section h3{
-    margin: 0;
-    color: black;
-    font-size: 10px;
-}
-.seccion .parrafo h2{
-    font-size: 15px;
-    align-items: center;
-}
-
 }
