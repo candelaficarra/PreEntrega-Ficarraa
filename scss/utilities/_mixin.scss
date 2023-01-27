@@ -2,14 +2,14 @@
     .galeria-container{
         display: grid;
         grid-template-columns: repeat(3, 1fr) ;
-        grid: template rows 150px; ;
+        grid-template-rows: 150px; ;
         padding: 20px;
         grid-gap: 10px;
         .galeria-item{
             position: relative;
                 img{
-                    width: 60%;
-                    height: 60%;
+                    width: 65%;
+                    height: 65%;
                     object-fit: cover;
                 }
                 h4{
@@ -19,8 +19,8 @@
                     background: linear-gradient(rgba white  black);
                     width: 100%;
                     margin: 0;
-                    padding: 10px;
-                    font-size: 20px;
+                    padding: 15px;
+                    font-size: 25px;
                 }
         }
     }
