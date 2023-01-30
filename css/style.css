@@ -5,28 +5,51 @@
   padding: 0;
   box-sizing: border-box; }
 
-header {
-  display: flex;
-  justify-content: space-between;
+nav {
   background-color: lightpink;
-  min-height: 70px;
-  align-items: center;
-  padding: 10px; }
-  header .nombre {
-    display: flex;
-    align-items: center; }
-    header .nombre img {
-      height: 50px;
-      margin-right: 10px; }
-    header .nombre h2 {
-      height: 50px; }
-  header nav:hover {
-    color: white; }
-  header nav a {
-    text-decoration: none;
-    color: black;
-    padding: 0px 32px;
-    font-size: 15px; }
+  height: 80px;
+  width: 100%; }
+  nav .enlace {
+    position: absolute;
+    padding: 20px 50px; }
+
+.enlace {
+  position: absolute;
+  padding: 20px 50px; }
+
+.imagen {
+  height: 40px; }
+
+nav ul {
+  float: right;
+  margin-right: 20px; }
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px; }
+
+nav ul li a {
+  color: black;
+  font-size: 15px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase; }
+
+li a.active, li a:hover {
+  background: white; }
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none; }
+
+#check {
+  display: none; }
 
 footer {
   display: flex;
@@ -68,27 +91,11 @@ footer {
   background-color: black;
   text-align: center; }
 
-.fondo {
-  height: 920px; }
-  .fondo img {
-    width: 100%;
-    height: 920px;
-    opacity: 0.80;
-    background-size: contain; }
-  .fondo h2 {
-    font-size: 40px;
-    color: black;
-    position: absolute;
-    top: 40%;
-    left: 25%;
-    text-align: center; }
-  .fondo p {
-    font-size: 30px;
-    color: black;
-    position: absolute;
-    top: 60%;
-    right: 20%;
-    text-align: center; }
+section {
+  background: url(../../imagen-fondo.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: calc(100vh - 80px); }
 
 form {
   background-color: lightgoldenrodyellow;
@@ -152,9 +159,9 @@ form {
     color: black;
     margin-right: 15px; }
   .seccion .parrafo img {
-    width: 300px;
-    height: 250px;
-    border-radius: 15px;
+    width: 150px;
+    height: 150px;
+    border-radius: 25px;
     justify-content: space-between; }
 
 .logo h2 {
@@ -176,16 +183,29 @@ form {
   font-family: 'Karla', sans-serif; }
 
 @media (max-width: 320px) {
-  header {
-    width: auto;
-    flex-direction: column; }
-    header nav {
-      padding: 5px 0px; }
-      header nav a {
-        font-size: 15px;
-        width: 50%; }
+  .checkbtn {
+    display: block; }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: lightpink;
+    top: 80px;
+    left: -100%;
+    text-align: center; }
+  nav ul li {
+    display: block;
+    margin: 50px o;
+    line-height: 30px; }
+  nav ul li a {
+    font-size: 15px; }
+  li a:hover, li a.active {
+    background: none;
+    color: black; }
+  #check:checked ~ ul {
+    left: 0; }
   main {
-    width: auto; }
+    width: 100%; }
   .logo h2 {
     font-family: 'Karla', sans-serif;
     width: 100%;
@@ -195,7 +215,10 @@ form {
     font-family: 'Roboto', sans-serif;
     width: 50px;
     height: 50px;
-    font-size: 15px; }
+    font-size: 15px;
+    align-items: center; }
+  .galeria-container .galeria-item img {
+    margin: auto; }
   .galeria-container .galeria-item h4 {
     position: absolute;
     width: 70%;
@@ -208,10 +231,11 @@ form {
     margin: 5px; }
   .seccion .parrafo p {
     color: black;
-    margin-right: 10px; }
+    margin-right: 10px;
+    font-size: 15px; }
   .seccion .parrafo img {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     border-radius: 30px;
     justify-content: space-evenly;
     align-items: center; }
