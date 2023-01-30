@@ -125,7 +125,8 @@ form {
     .galeria-container .galeria-item img {
       width: 65%;
       height: 65%;
-      object-fit: cover; }
+      object-fit: cover;
+      margin: 5px; }
     .galeria-container .galeria-item h4 {
       position: absolute;
       bottom: 0;
@@ -134,7 +135,7 @@ form {
       width: 100%;
       margin: 0;
       padding: 15px;
-      font-size: 25px; }
+      font-size: 20px; }
 
 .seccion {
   background-color: lightgoldenrodyellow;
@@ -176,12 +177,15 @@ form {
 
 @media (max-width: 320px) {
   header {
+    width: auto;
     flex-direction: column; }
     header nav {
       padding: 5px 0px; }
       header nav a {
         font-size: 15px;
         width: 50%; }
+  main {
+    width: auto; }
   .logo h2 {
     font-family: 'Karla', sans-serif;
     width: 100%;
@@ -235,11 +239,12 @@ form {
       right: 20%;
       text-align: center; }
   footer {
+    width: auto;
     font-size: 15px;
     margin: 0;
     justify-content: sa; }
     footer .grupo1 {
-      width: 90%;
+      width: 70%;
       grid-template-columns: repeat(1, 1fr);
       grid-gap: 30px;
       padding: 35px 0px;
@@ -249,9 +254,14 @@ form {
 
 @media (max-width: 768px) {
   header {
+    width: auto;
     flex-direction: column; }
     header nav {
       padding: 10px 0px; }
+  main {
+    width: auto; }
+  footer {
+    width: auto; }
   .galeria-container {
     grid-template-columns: repeat(4, 1fr); }
   .galeria-item:nth-child(3) {

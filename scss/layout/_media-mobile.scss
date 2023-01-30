@@ -1,5 +1,6 @@
 @media(max-width:320px){
     header{
+        width: auto;
     flex-direction: column;
     nav{
         padding: 5px 0px ;
@@ -8,6 +9,9 @@
                 width: 50%;
             }
     }
+}
+main{
+    width: auto;
 }
 
 .logo h2{
@@ -87,6 +91,7 @@ form{
 }
 
 footer{
+    width: auto;
     font-size: 15px;
     margin: 0;
     justify-content: sa;

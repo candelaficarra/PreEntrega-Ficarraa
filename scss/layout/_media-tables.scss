@@ -1,11 +1,17 @@
 @media(max-width:768px){
     header{
+        width: auto;
         flex-direction: column;
         nav{
             padding: 10px 0px ;
         }
     }
-
+    main{
+        width: auto;
+    }
+footer{
+    width: auto;
+}
 .galeria-container{
     grid-template-columns: repeat(4, 1fr);
     }
