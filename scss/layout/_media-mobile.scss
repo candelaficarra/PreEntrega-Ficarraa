@@ -1,33 +1,19 @@
 @media(max-width:320px){
-    .checkbtn{
-        display: block;
+    header{
+        flex-direction: column;
     }
-    ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: lightpink;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-
+    nav{
+        padding: 5px 0px ;
     }
-    nav ul li {
-        display: block;
-        margin: 50px o;
-        line-height: 30px;
+    .titulo p{
+        display: none;
     }
-    nav ul li a{
-        font-size: 15px;
-
+    .titulo h1 {
+        font-family: 'Roboto', sans-serif;
+        width: 50px;
+        height: 50px;
     }
-    li a:hover, li a.active{
-        background:none;
-        color: black;
-    }
-    #check:checked ~ ul{
-        left: 0;
-    }
+    
 main{
     width: 100%;
 }

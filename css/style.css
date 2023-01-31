@@ -5,44 +5,31 @@
   padding: 0;
   box-sizing: border-box; }
 
-nav {
+header {
+  display: flex;
+  justify-content: space-between;
   background-color: lightpink;
-  height: 80px;
-  width: 100%; }
-  nav .enlace {
-    position: absolute;
-    padding: 20px 50px; }
-    nav .enlace img {
-      height: 40px; }
+  min-height: 70px;
+  align-items: center;
+  padding: 10px; }
 
-nav ul {
-  float: right;
-  margin-right: 20px; }
-  nav ul li {
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px; }
-    nav ul li a {
-      color: black;
-      font-size: 15px;
-      padding: 7px 13px;
-      border-radius: 3px;
-      text-transform: uppercase; }
+.nombre {
+  display: flex;
+  align-items: center; }
+  .nombre img {
+    height: 50px;
+    margin-right: 10px; }
+  .nombre h2 {
+    height: 50px; }
 
-li a.active, li a:hover {
-  background: white; }
+nav:hover {
+  color: white; }
 
-.checkbtn {
-  font-size: 30px;
-  color: white;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
-  cursor: pointer;
-  display: none; }
-
-#check {
-  display: none; }
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 0px 32px;
+  font-size: 15px; }
 
 footer {
   display: flex;
@@ -84,11 +71,15 @@ footer {
   background-color: black;
   text-align: center; }
 
-section {
-  background: url(../../imagen-fondo.jpg) no-repeat;
+.fondo {
+  height: 920px;
   background-size: cover;
-  background-position: center center;
-  height: calc(100vh - 80px); }
+  background-position: center center; }
+  .fondo img {
+    width: 100%;
+    height: 920px;
+    opacity: 0.80;
+    background-size: contain; }
 
 form {
   background-color: lightgoldenrodyellow;
@@ -176,27 +167,16 @@ form {
   font-family: 'Karla', sans-serif; }
 
 @media (max-width: 320px) {
-  .checkbtn {
-    display: block; }
-  ul {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: lightpink;
-    top: 80px;
-    left: -100%;
-    text-align: center; }
-  nav ul li {
-    display: block;
-    margin: 50px o;
-    line-height: 30px; }
-  nav ul li a {
-    font-size: 15px; }
-  li a:hover, li a.active {
-    background: none;
-    color: black; }
-  #check:checked ~ ul {
-    left: 0; }
+  header {
+    flex-direction: column; }
+  nav {
+    padding: 5px 0px; }
+  .titulo p {
+    display: none; }
+  .titulo h1 {
+    font-family: 'Roboto', sans-serif;
+    width: 50px;
+    height: 50px; }
   main {
     width: 100%; }
   .logo h2 {
