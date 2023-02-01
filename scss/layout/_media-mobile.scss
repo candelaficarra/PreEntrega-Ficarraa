@@ -1,9 +1,14 @@
 @media(max-width:320px){
     header{
-        flex-direction: column;
+    display: inline-block;
     }
     nav{
         padding: 5px 0px ;
+        display: inline-block;
+            a{
+                font-size: 10px;
+                display: inline-block;
+            }
     }
     .titulo p{
         display: none;

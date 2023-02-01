@@ -80,22 +80,20 @@ footer {
     height: 920px;
     opacity: 0.80;
     background-size: contain; }
-
-.titulo1 {
-  font-size: 40px;
-  color: black;
-  position: absolute;
-  top: 40%;
-  left: 25%;
-  text-align: center; }
-
-.titulo2 {
-  font-size: 30px;
-  color: black;
-  position: absolute;
-  top: 60%;
-  right: 20%;
-  text-align: center; }
+  .fondo h2 {
+    font-size: 40px;
+    color: black;
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    text-align: center; }
+  .fondo p {
+    font-size: 30px;
+    color: black;
+    position: absolute;
+    top: 60%;
+    right: 20%;
+    text-align: center; }
 
 form {
   background-color: lightgoldenrodyellow;
@@ -125,15 +123,15 @@ form {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 150px;
-  padding: 20px;
+  padding: 10px;
   grid-gap: 10px; }
   .galeria-container .galeria-item {
     position: relative; }
     .galeria-container .galeria-item img {
-      width: 65%;
-      height: 65%;
+      width: 70%;
+      height: 70%;
       object-fit: cover;
-      margin: 5px; }
+      margin: 15px; }
     .galeria-container .galeria-item h4 {
       position: absolute;
       bottom: 0;
@@ -141,7 +139,7 @@ form {
       background: linear-gradient(rgba white black);
       width: 100%;
       margin: 0;
-      padding: 15px;
+      padding: 10px;
       font-size: 20px; }
 
 .seccion {
@@ -182,11 +180,18 @@ form {
 .contacto h3 {
   font-family: 'Karla', sans-serif; }
 
+.titulo {
+  justify-content: center; }
+
 @media (max-width: 320px) {
   header {
-    flex-direction: column; }
+    display: inline-block; }
   nav {
-    padding: 5px 0px; }
+    padding: 5px 0px;
+    display: inline-block; }
+    nav a {
+      font-size: 10px;
+      display: inline-block; }
   .titulo p {
     display: none; }
   .titulo h1 {

@@ -9,23 +9,21 @@
             opacity: 0.80;
             background-size:contain;
     }
-}
-.titulo1{
-    font-size: 40px;
-    color:black;
-    position: absolute;
-    top: 40%;
-    left: 25%;
-    text-align: center;
-
-}
-.titulo2{
-    font-size: 30px;
-    color:black;
-    position: absolute;
-    top: 60%;
-    right: 20%;
-    text-align: center;
+    h2{    font-size: 40px;
+        color:black;
+        position: absolute;
+        top: 40%;
+        left: 25%;
+        text-align: center;
+    }
+    p{
+        font-size: 30px;
+        color:black;
+        position: absolute;
+        top: 60%;
+        right: 20%;
+        text-align: center;
+    }
 }
 
 form{   
@@ -76,7 +74,9 @@ form{
     font-family: 'Karla', sans-serif;
 }
 
-
 .contacto h3{
     font-family: 'Karla', sans-serif;
+}
+.titulo{
+    justify-content: center;
 }
